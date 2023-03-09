@@ -4,6 +4,7 @@
 --primary-color:hsla(160, 2%, 31%, 1);
 --city-color:hsla(0, 0%, 66%, 1);
 --stats-titles-color:hsla(0, 0%, 74%, 1);
+--footer-color: hsla(229, 19%, 77%, 1);
 }
 * {
     padding: 0;
@@ -15,8 +16,8 @@
     position: relative;
 }
 .wrap{
-    padding: 0 0.75rem;
-    padding-bottom: 3rem;
+    padding: 0 clamp(0.75rem, -4.268rem + 21.408vw, 15rem);
+    padding-bottom: clamp(2.75rem, 0.769rem + 8.451vw, 8.375rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,12 +26,13 @@
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+    max-width: 25rem;
 }
 
 .profile-picture{
     width: clamp(6.36rem, 5.166rem + 5.093vw, 9.75rem);
     margin-top: 1.875rem;
-    margin-bottom: 0.75rem;
+    margin-bottom: clamp(0.75rem, 0.662rem + 0.376vw, 1rem);
     border-radius: 16px;
 }
 .name{
@@ -38,14 +40,14 @@
     font-size: clamp(0.875rem, 0.655rem + 0.939vw, 1.5rem);
     font-weight: 600;
     color: var(--primary-color);
-    margin-bottom: 0.25rem;
+    margin-bottom: clamp(0.25rem, 0.162rem + 0.376vw, 0.5rem);
 }
 .city{
     font-family: var(--montserrat);
     font-size:clamp(0.625rem, 0.537rem + 0.376vw, 0.875rem) ;
     font-weight: 600;
     color: var(--city-color);
-    margin-bottom: 0.75rem;
+    margin-bottom: clamp(0.75rem, 0.486rem + 1.127vw, 1.5rem);
 }
 .stats-section{
    display: flex; 
@@ -54,13 +56,13 @@
    background-color: hsla(0, 0%, 90%, 1);
    padding: 0.75rem;
    border-radius: 0.75rem;
-   margin-bottom: 2rem;
+   margin-bottom: clamp(2.5rem, 1.972rem + 2.254vw, 4rem);
 }
 .stats-numbers{
     font-family:var(--montserrat);
     font-size: clamp(0.75rem, 0.618rem + 0.563vw, 1.125rem);
     font-weight: 600;
-    color: hsla(160, 2%, 31%, 1);
+    color: var(--primary-color);
 }
 .stats-titles{
     font-family: var(--montserrat);
@@ -106,7 +108,8 @@
 footer p{
     text-align: center;
     color: hsla(229, 19%, 77%, 1);
+    margin-bottom: 1.5rem;
 }
 footer p a {
-    color: hsla(229, 19%, 77%, 1);
+    color: var(--footer-color);
 }
