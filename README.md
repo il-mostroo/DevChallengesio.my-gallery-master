@@ -7,7 +7,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://github.com/il-mostroo/DevChallengesio.my-gallery-master/settings/pages">
+    <a href="https://il-mostroo.github.io/DevChallengesio.my-gallery-master/">
       Demo
     </a>
     <span> | </span>
